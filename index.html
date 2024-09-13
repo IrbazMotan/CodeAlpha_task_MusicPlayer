@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/10265ab161.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                  <i class="fa-solid fa-angles-left"></i>  
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+            </nav>
+            <img src="img/roza-e-rasool.jfif" class="song-img">
+          <h1 id="track-title">TAJDAR E HARAM</h1>
+          <p id="track-artist">ATIF ASLAM</p>
+        <audio  id="song" src="audio/balaghal-ula-be-kamalehi.mp3" type="audio/mpeg"></audio>
+
+        <input type="range" value="0" id="progress">
+        <div class="controls">
+<button id="prev"><i class="fa-solid fa-backward"></i></button>
+<button onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon" ></i></button>
+<button id="next"><i class="fa-solid fa-forward"></i></button>
+
+        </div>
+        </div>
+    </div>
+    <script src="music.js"></script>
+</body>
+</html>
